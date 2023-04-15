@@ -2,13 +2,19 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
+    "typecheck": "nuxi typecheck",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.4.1"
+    "nuxt": "^3.4.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "vue-tsc": "^1.2.0"
   }
 }
