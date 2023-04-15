@@ -1,5 +1,8 @@
+<script setup lang="ts">
+const { fetchStoriesBySlug } = useStories();
+const story = await fetchStoriesBySlug(`/Home`);
+</script>
+
 <template>
-    <div>
-        <h1 class="text-3xl font-bold underline">My Dynamic Form!</h1>
-    </div>
+    <StoryblokComponent v-if="story" :blok="story.content" />
 </template>
