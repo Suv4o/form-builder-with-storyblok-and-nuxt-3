@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div>
+    <form>
         <StoryblokComponent v-for="blok in props.blok.columns" :key="props.blok.columns._uid" :blok="blok" />
-    </div>
+    </form>
 </template>
