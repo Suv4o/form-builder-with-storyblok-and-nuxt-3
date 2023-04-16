@@ -9,8 +9,8 @@ const props = defineProps<{
 
 <template>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-        <div class="bg-blue-500">01</div>
-        <div class="bg-red-500">02</div>
-        <div class="bg-yellow-500">03</div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </template>

@@ -9,6 +9,6 @@ const props = defineProps<{
 
 <template>
     <div class="grid grid-cols-1 gap-4 mb-4">
-        <div class="bg-blue-500">01</div>
+        <div></div>
     </div>
 </template>
