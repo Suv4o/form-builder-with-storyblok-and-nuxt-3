@@ -9,7 +9,6 @@ const props = defineProps<{
 
 <template>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div></div>
-        <div></div>
+        <StoryblokComponent v-for="blok in props.blok.body" :key="props.blok.body._uid" :blok="blok" />
     </div>
 </template>
